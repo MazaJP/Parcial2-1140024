@@ -1,0 +1,7 @@
+-- Estructura para guardar clientes en una base de datos PostgreSQL.
+CREATE TABLE clientes (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(150) NOT NULL,
+    telefono VARCHAR(20) NOT NULL
+);
